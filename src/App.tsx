@@ -14,7 +14,7 @@ function App() {
   const renderVideo = (videoId: string) => {
     return (
       <>
-        <div style={{ flexGrow: 3, flexShrink: 1, display: "flex", flexDirection: "column", gap: "16px", backgroundColor: "gainsboro", padding: "16px" }}>
+        <div style={{ flexGrow: 2, flexShrink: 1, display: "flex", flexDirection: "column", gap: "8px", backgroundColor: "gainsboro", padding: "8px" }}>
           <iframe
             src={`https://www.youtube.com/embed/${videoId}`}
             title="YouTube video player"
@@ -32,7 +32,9 @@ function App() {
 
   return (
     <>
-      <div style={{ display: "flex", gap: "16px", flexFlow: "row wrap" }}>
+      <h3>kopieringssida</h3>
+      <p>version 0.1</p>
+      <div style={{ display: "flex", gap: "8px", flexFlow: "row wrap" }}>
         {videoIds.map((videoId: string) => renderVideo(videoId))}
       </div>
     </>
